@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="reportGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="informGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="consultGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <style>
+    text { fill: #333; }
+    .title { font-size: 26px; font-weight: 700; fill: #1a1a1a; }
+    .sub { font-size: 14px; fill: #666; }
+    .ja { font-size: 22px; font-weight: 700; }
+    .cn { font-size: 16px; font-weight: 700; }
+    .rule { font-size: 13px; fill: #555; }
+    .example { font-size: 12px; fill: #777; }
+    .footer { font-size: 13px; fill: #888; }
+    .big-ja { font-size: 28px; font-weight: 700; }
+  </style>
+  <rect x="0" y="0" width="800" height="520" fill="url(#bgGrad)"/>
+  <text x="400" y="38" text-anchor="middle" class="title">报联商（ホウレンソウ）—— 日企沟通的"菠菜"文化</text>
+  <text x="400" y="60" text-anchor="middle" class="sub">三个动作的合称，发音像"菠菜"（ほうれんそう），Wikipedia 有专门条目 Ho-Ren-Sō</text>
+
+  <!-- 中心圆 -->
+  <circle cx="400" cy="160" r="50" fill="url(#centerGrad)" stroke="#f472b6" stroke-width="1" filter="url(#shadow)"/>
+  <text x="400" y="155" text-anchor="middle" class="big-ja" fill="#9d174d">報連相</text>
+  <text x="400" y="180" text-anchor="middle" class="footer" fill="#9d174d">ほうれんそう</text>
+
+  <!-- 报告（左上） -->
+  <rect x="40" y="80" width="200" height="130" rx="8" fill="url(#reportGrad)" filter="url(#shadow)" stroke="#60a5fa" stroke-width="0.5"/>
+  <text x="140" y="108" text-anchor="middle" class="ja" fill="#1e40af">報（報告）</text>
+  <text x="140" y="130" text-anchor="middle" class="cn" fill="#1e40af">及时汇报</text>
+  <text x="140" y="152" text-anchor="middle" class="rule">从下属到上司，主动汇报</text>
+  <text x="140" y="170" text-anchor="middle" class="rule">进展、变化、问题都要说</text>
+  <text x="140" y="188" text-anchor="middle" class="rule">不等上司问，主动报告</text>
+  <text x="140" y="204" text-anchor="middle" class="example" fill="#999">例：进度落后了，第一时间说</text>
+
+  <!-- 联络（右上） -->
+  <rect x="560" y="80" width="200" height="130" rx="8" fill="url(#informGrad)" filter="url(#shadow)" stroke="#34d399" stroke-width="0.5"/>
+  <text x="660" y="108" text-anchor="middle" class="ja" fill="#065f46">連（連絡）</text>
+  <text x="660" y="130" text-anchor="middle" class="cn" fill="#065f46">及时通知</text>
+  <text x="660" y="152" text-anchor="middle" class="rule">通知所有相关人</text>
+  <text x="660" y="170" text-anchor="middle" class="rule">影响别人的事提前告知</text>
+  <text x="660" y="188" text-anchor="middle" class="rule">関係者全員に周知</text>
+  <text x="660" y="204" text-anchor="middle" class="example" fill="#999">例：改接口了，通知调用方</text>
+
+  <!-- 商谈（下方居中） -->
+  <rect x="300" y="240" width="200" height="130" rx="8" fill="url(#consultGrad)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="0.5"/>
+  <text x="400" y="268" text-anchor="middle" class="ja" fill="#92400e">相（相談）</text>
+  <text x="400" y="290" text-anchor="middle" class="cn" fill="#92400e">及时商量</text>
+  <text x="400" y="312" text-anchor="middle" class="rule">拿不准的事，先问上司</text>
+  <text x="400" y="330" text-anchor="middle" class="rule">擅自决定比做错更严重</text>
+  <text x="400" y="348" text-anchor="middle" class="rule">先想清楚再问，带着方案去</text>
+  <text x="400" y="364" text-anchor="middle" class="example" fill="#999">例：不确定的需求，先问客户别猜</text>
+
+  <!-- 连线 -->
+  <line x1="240" y1="145" x2="350" y2="145" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="450" y1="145" x2="560" y2="145" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="400" y1="210" x2="400" y2="240" stroke="#94a3b8" stroke-width="1" marker-end="url(#arrowDown)"/>
+
+  <!-- 底部：三个动作的关系 -->
+  <rect x="60" y="400" width="680" height="50" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.5"/>
+  <text x="400" y="422" text-anchor="middle" class="footer">报联商的关系：</text>
+  <text x="400" y="440" text-anchor="middle" class="footer" fill="#666">報（向上汇报）→ 連（横向通知）→ 相（向上商量）→ 三者循环，形成日企沟通闭环</text>
+
+  <text x="400" y="506" text-anchor="middle" class="footer" fill="#999">来源：Wikipedia Ho-Ren-Sō · 山崎富治（元山武社长）首创 · 1980年代开始在日本企业广泛传播</text>
+</svg>

@@ -121,7 +121,7 @@ export default defineConfig({
   },
 
   srcDir: '.',
-  srcExclude: ['node_modules', 'convert.mjs', 'fix-paths.mjs', 'docs'],
+  srcExclude: ['node_modules', 'convert.mjs', 'fix-paths.mjs', 'docs', 'CLAUDE.md', 'AGENTS.md', 'BRAIN.md'],
 
   lastUpdated: true,
 

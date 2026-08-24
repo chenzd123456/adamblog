@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <linearGradient id="pmGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="bseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#ddd6fe"/>
+    </linearGradient>
+    <linearGradient id="kakariGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="devGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="testGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <style>
+    text { fill: #333; }
+    .title { font-size: 26px; font-weight: 700; fill: #1a1a1a; }
+    .sub { font-size: 14px; fill: #666; }
+    .role-name { font-size: 18px; font-weight: 700; }
+    .role-desc { font-size: 13px; fill: #555; }
+    .role-line { font-size: 13px; fill: #666; }
+    .center-title { font-size: 22px; font-weight: 700; fill: #1e40af; }
+    .center-sub { font-size: 14px; fill: #666; }
+    .phase { font-size: 14px; font-weight: 600; }
+    .phase-sub { font-size: 11px; fill: #666; }
+    .label { font-size: 13px; font-weight: 600; fill: #4b5563; }
+  </style>
+  <rect x="0" y="0" width="800" height="720" fill="#f8fafc"/>
+  <text x="400" y="36" text-anchor="middle" class="title">日企嵌入式固件项目五个角色全景</text>
+  <text x="400" y="58" text-anchor="middle" class="sub">PM 管横 · BSE 管纵 · 课长管资源 · 开发写代码 · 测试把品质</text>
+
+  <!-- 中心：项目流程 -->
+  <rect x="225" y="80" width="350" height="130" rx="10" fill="url(#centerGrad)" stroke="#94a3b8" stroke-width="0.5" filter="url(#shadow)"/>
+  <text x="400" y="108" text-anchor="middle" class="center-title">项目流程</text>
+  <text x="400" y="130" text-anchor="middle" class="center-sub">発注 → 要件定義 → 設計 → 実装 → テスト → 出荷・検収</text>
+  <text x="400" y="150" text-anchor="middle" class="center-sub" fill="#888">V字模型：左侧分解→编码→右侧验证</text>
+  <text x="400" y="172" text-anchor="middle" class="center-sub" fill="#888">報連相（ホウレンソウ）贯穿始终</text>
+  <text x="400" y="195" text-anchor="middle" class="center-sub" fill="#888">検討・建前本音・根回し</text>
+
+  <!-- PM（左上） -->
+  <rect x="40" y="240" width="220" height="120" rx="8" fill="url(#pmGrad)" filter="url(#shadow)" stroke="#60a5fa" stroke-width="0.5"/>
+  <text x="150" y="268" text-anchor="middle" class="role-name" fill="#1e40af">PM 项目经理</text>
+  <text x="150" y="290" text-anchor="middle" class="role-desc">管进度、成本、范围、客户关系</text>
+  <text x="150" y="310" text-anchor="middle" class="role-line">排スケジュール · 管課題管理表 · 出週報月報</text>
+  <text x="150" y="330" text-anchor="middle" class="role-line">对外对日本总部负责</text>
+  <text x="150" y="350" text-anchor="middle" class="role-line">汇报对象：课长 / 日本总部PM</text>
+
+  <!-- BSE（右上） -->
+  <rect x="540" y="240" width="220" height="120" rx="8" fill="url(#bseGrad)" filter="url(#shadow)" stroke="#a78bfa" stroke-width="0.5"/>
+  <text x="650" y="268" text-anchor="middle" class="role-name" fill="#5b21b6">BSE 桥接工程师</text>
+  <text x="650" y="290" text-anchor="middle" class="role-desc">中日技术桥梁、品质把关</text>
+  <text x="650" y="310" text-anchor="middle" class="role-line">需求翻译 · 规格对齐 · 评审组织</text>
+  <text x="650" y="330" text-anchor="middle" class="role-line">不具合管理 · 千行不具合监控</text>
+  <text x="650" y="350" text-anchor="middle" class="role-line">汇报对象：PM（虚线：日本总部技术线）</text>
+
+  <!-- 课长（左中） -->
+  <rect x="40" y="390" width="220" height="120" rx="8" fill="url(#kakariGrad)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="0.5"/>
+  <text x="150" y="418" text-anchor="middle" class="role-name" fill="#92400e">课长 部门经理</text>
+  <text x="150" y="440" text-anchor="middle" class="role-desc">管资源、管人、管整体盘子</text>
+  <text x="150" y="460" text-anchor="middle" class="role-line">审批报价 · 调配资源 · 签字放行</text>
+  <text x="150" y="480" text-anchor="middle" class="role-line">关注品质趋势 · 内部门禁检查</text>
+  <text x="150" y="500" text-anchor="middle" class="role-line">汇报对象：中国总经理 / 日本总部部长</text>
+
+  <!-- 开发（右中） -->
+  <rect x="540" y="390" width="220" height="120" rx="8" fill="url(#devGrad)" filter="url(#shadow)" stroke="#34d399" stroke-width="0.5"/>
+  <text x="650" y="418" text-anchor="middle" class="role-name" fill="#065f46">开发 编码工程师</text>
+  <text x="650" y="440" text-anchor="middle" class="role-desc">写式样书、设计书、代码</text>
+  <text x="650" y="460" text-anchor="middle" class="role-line">按设计书写代码 · 接受代码评审</text>
+  <text x="650" y="480" text-anchor="middle" class="role-line">配合 WBS 分解 · 修 bug</text>
+  <text x="650" y="500" text-anchor="middle" class="role-line">汇报对象：PM（技术上听BSE的）</text>
+
+  <!-- 测试（下方居中） -->
+  <rect x="290" y="540" width="220" height="120" rx="8" fill="url(#testGrad)" filter="url(#shadow)" stroke="#f472b6" stroke-width="0.5"/>
+  <text x="400" y="568" text-anchor="middle" class="role-name" fill="#9d174d">测试 测试工程师</text>
+  <text x="400" y="590" text-anchor="middle" class="role-desc">写用例、执行测试、报bug</text>
+  <text x="400" y="610" text-anchor="middle" class="role-line">编写测试用例 · 执行测试 · 登记不具合</text>
+  <text x="400" y="630" text-anchor="middle" class="role-line">回归验证 · 提交测试报告</text>
+  <text x="400" y="650" text-anchor="middle" class="role-line">汇报对象：PM（品质上听BSE的）</text>
+
+  <!-- 连线箭头：从中心指向各角色 -->
+  <line x1="260" y1="210" x2="150" y2="240" stroke="#94a3b8" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="540" y1="210" x2="650" y2="240" stroke="#94a3b8" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="260" y1="210" x2="150" y2="390" stroke="#94a3b8" stroke-width="1" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+  <line x1="540" y1="210" x2="650" y2="390" stroke="#94a3b8" stroke-width="1" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+  <line x1="400" y1="210" x2="400" y2="540" stroke="#94a3b8" stroke-width="1" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+
+  <!-- 底部注脚 -->
+  <text x="400" y="702" text-anchor="middle" class="sub" fill="#999">五个角色围绕项目流程各司其职，报联商贯穿所有沟通</text>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <linearGradient id="leftGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="bottomGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L5,10 L10,0" fill="#64748b"/>
+    </marker>
+    <marker id="arrowUp" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,10 L5,0 L10,10" fill="#64748b"/>
+    </marker>
+    <marker id="arrowRight" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#64748b"/>
+    </marker>
+  </defs>
+  <style>
+    text { fill: #333; }
+    .title { font-size: 26px; font-weight: 700; fill: #1a1a1a; }
+    .sub { font-size: 14px; fill: #666; }
+    .phase-title { font-size: 16px; font-weight: 700; }
+    .phase-desc { font-size: 12px; fill: #555; }
+    .label { font-size: 14px; font-weight: 600; fill: #4b5563; }
+    .small { font-size: 12px; fill: #888; }
+  </style>
+  <rect x="0" y="0" width="800" height="620" fill="#f8fafc"/>
+  <text x="400" y="34" text-anchor="middle" class="title">V字模型：六阶段流程</text>
+  <text x="400" y="56" text-anchor="middle" class="sub">左侧需求→设计逐层分解 → 编码 → 右侧单测→集成→系统测试逐层验证</text>
+
+  <!-- 左侧：需求/设计（降序） -->
+  <text x="120" y="88" text-anchor="middle" class="label" fill="#1e40af">需求与设计（左侧分解）</text>
+
+  <rect x="30" y="100" width="180" height="55" rx="6" fill="url(#topGrad)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="0.5"/>
+  <text x="120" y="124" text-anchor="middle" class="phase-title">発注 · 要件定義</text>
+  <text x="120" y="144" text-anchor="middle" class="phase-desc">客户発注 + 需求定义</text>
+
+  <line x1="120" y1="155" x2="120" y2="175" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+
+  <rect x="30" y="180" width="180" height="55" rx="6" fill="url(#leftGrad)" filter="url(#shadow)" stroke="#60a5fa" stroke-width="0.5"/>
+  <text x="120" y="204" text-anchor="middle" class="phase-title">設計</text>
+  <text x="120" y="224" text-anchor="middle" class="phase-desc">基本設計 + 詳細設計</text>
+
+  <line x1="120" y1="235" x2="120" y2="255" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+
+  <rect x="30" y="260" width="180" height="55" rx="6" fill="url(#leftGrad)" filter="url(#shadow)" stroke="#60a5fa" stroke-width="0.5"/>
+  <text x="120" y="284" text-anchor="middle" class="phase-title">実装（编码）</text>
+  <text x="120" y="304" text-anchor="middle" class="phase-desc">写代码 + コードレビュー</text>
+
+  <!-- 右侧：测试（升序） -->
+  <text x="680" y="88" text-anchor="middle" class="label" fill="#9d174d">测试与验收（右侧验证）</text>
+
+  <rect x="590" y="260" width="180" height="55" rx="6" fill="url(#rightGrad)" filter="url(#shadow)" stroke="#f472b6" stroke-width="0.5"/>
+  <text x="680" y="284" text-anchor="middle" class="phase-title">単体試験</text>
+  <text x="680" y="304" text-anchor="middle" class="phase-desc">单元测试 · 模块级别</text>
+
+  <line x1="680" y1="235" x2="680" y2="255" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowUp)"/>
+
+  <rect x="590" y="180" width="180" height="55" rx="6" fill="url(#rightGrad)" filter="url(#shadow)" stroke="#f472b6" stroke-width="0.5"/>
+  <text x="680" y="204" text-anchor="middle" class="phase-title">結合試験</text>
+  <text x="680" y="224" text-anchor="middle" class="phase-desc">集成测试 · 模块间</text>
+
+  <line x1="680" y1="155" x2="680" y2="175" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowUp)"/>
+
+  <rect x="590" y="100" width="180" height="55" rx="6" fill="url(#topGrad)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="0.5"/>
+  <text x="680" y="124" text-anchor="middle" class="phase-title">総合試験 · 出荷検収</text>
+  <text x="680" y="144" text-anchor="middle" class="phase-desc">系统测试 + 客户验收</text>
+
+  <!-- V 字连线 -->
+  <line x1="210" y1="128" x2="590" y2="128" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="400" y="124" text-anchor="middle" class="small">规格对齐</text>
+
+  <line x1="210" y1="208" x2="590" y2="208" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="400" y="204" text-anchor="middle" class="small">设计验证</text>
+
+  <line x1="210" y1="288" x2="590" y2="288" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="400" y="284" text-anchor="middle" class="small">代码实现</text>
+
+  <!-- 底部注脚 -->
+  <text x="400" y="350" text-anchor="middle" class="small" fill="#999">V-Model 核心：左侧做对的事（验证方向正确），右侧把事做对（验证实现正确）</text>
+
+  <!-- 底部：品质管理 -->
+  <rect x="100" y="380" width="600" height="60" rx="8" fill="url(#bottomGrad)" filter="url(#shadow)" stroke="#34d399" stroke-width="0.5"/>
+  <text x="400" y="406" text-anchor="middle" class="phase-title" fill="#065f46">全流程品质管理</text>
+  <text x="400" y="426" text-anchor="middle" class="phase-desc">千行不具合监控 · 不具合トリアージ · 品質メトリクス · 出荷品質門</text>
+
+  <!-- 底部：沟通 -->
+  <rect x="100" y="460" width="600" height="60" rx="8" fill="url(#topGrad)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="0.5"/>
+  <text x="400" y="486" text-anchor="middle" class="phase-title" fill="#92400e">全流程沟通机制</text>
+  <text x="400" y="506" text-anchor="middle" class="phase-desc">報連相（ホウレンソウ）· 朝会 · 進捗会議 · 根回し · 建前と本音</text>
+
+  <!-- 箭头：从流程指向品质和沟通 -->
+  <line x1="400" y1="315" x2="400" y2="380" stroke="#64748b" stroke-width="1" marker-end="url(#arrowDown)"/>
+  <line x1="400" y1="440" x2="400" y2="460" stroke="#64748b" stroke-width="1" marker-end="url(#arrowDown)"/>
+
+  <text x="400" y="610" text-anchor="middle" class="small" fill="#999">日企把 V-Model 拆成発注→要件定義→設計→実装→テスト→出荷・検収六段，但骨架不变</text>
+</svg>
